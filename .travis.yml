@@ -8,6 +8,6 @@ script:
 
 deploy:
   provider: script
-  script: bash push-image.sh
+  script: bash scripts/push-image.sh
   on:
     branch: master
