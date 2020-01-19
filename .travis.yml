@@ -1,0 +1,13 @@
+language: node.js
+
+services:
+  - docker
+
+script:
+  - docker build -t registry.aragon.codes/miguel.aragon.codes .
+
+deploy:
+  provider: script
+  script: bash push-image.sh
+  on:
+    branch: master
