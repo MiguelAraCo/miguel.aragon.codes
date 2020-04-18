@@ -13,7 +13,7 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 			<p>｢ミゲル・アラゴン｣</p>
 		</header>
 		<p>
-			Software Engineer <a href="https://global.rakuten.com/corp/about/">@Rakuten</a>
+			Architect <a href="https://global.rakuten.com/corp/about/">@Rakuten</a>
 		</p>
 		<div>
 			<a href="https://github.com/MiguelAraCo">
