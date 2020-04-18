@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NextPage } from "next";
 import { withTranslation } from "react-i18next";
-import {WithTranslation} from "next-i18next";
+import { WithTranslation } from "next-i18next";
 
 const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 	<>
@@ -10,7 +10,7 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 		</div>
 		<header>
 			<h1>Miguel Aragon</h1>
-			<p>｢ミゲル・アラゴン｣</p>
+			<p>｢アラゴン・ミゲル｣</p>
 		</header>
 		<p>
 			Architect <a href="https://global.rakuten.com/corp/about/">@Rakuten</a>
