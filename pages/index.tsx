@@ -1,10 +1,14 @@
 import * as React from "react";
 import { NextPage } from "next";
+import Head from "next/head";
 import { withTranslation } from "react-i18next";
 import { WithTranslation } from "next-i18next";
 
 const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 	<>
+		<Head>
+			<title>Home | Miguel Aragon's site</title>
+		</Head>
 		<div>
 			<img alt="Miguel Aragón" src="https://via.placeholder.com/150" />
 		</div>
@@ -17,21 +21,21 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 		</p>
 		<div>
 			<a href="https://github.com/MiguelAraCo">
-				<img src="https://via.placeholder.com/40" />
+				<img alt="GitHub profile" src="https://via.placeholder.com/40" />
 			</a>
 			<a href="https://www.linkedin.com/in/miguelaraco">
-				<img src="https://via.placeholder.com/40" />
+				<img alt="LinkedIn profile" src="https://via.placeholder.com/40" />
 			</a>
 			<a href="https://twitter.com/miguelaraco">
-				<img src="https://via.placeholder.com/40" />
+				<img alt="Twitter profile" src="https://via.placeholder.com/40" />
 			</a>
 			<a href="https://codepen.io/MiguelAraCo/">
-				<img src="https://via.placeholder.com/40" />
+				<img alt="Codepen profile" src="https://via.placeholder.com/40" />
 			</a>
 		</div>
 		<div>
 			<p>Welcome to my personal website!</p>
-			<p>I'm a Software Engineer with a biomedical background that specializes in web technologies.</p>
+			<p>As you can see, I'm currently in the process of updating it, come back later!</p>
 		</div>
 	</>
 );
