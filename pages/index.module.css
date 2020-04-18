@@ -1,0 +1,15 @@
+.socialLinks {
+	display: inline-grid;
+	/* Append items as new columns to the grid */
+	grid-auto-flow: column;
+	grid-gap: 16px;
+
+	/* Icon size */
+	font-size: 32px;
+}
+
+.socialLinks > a {
+	/* Avoid line-height from defining the size of the icons */
+	width: 1em;
+	height: 1em;
+}

@@ -3,6 +3,8 @@ import App from "next/app";
 
 import { appWithTranslation } from "../i18n";
 
+import "./global.css";
+
 export class MiguelAragonCodes extends App {
 	render(): JSX.Element {
 		const { Component, pageProps } = this.props;

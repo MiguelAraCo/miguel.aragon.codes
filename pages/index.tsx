@@ -4,6 +4,11 @@ import Head from "next/head";
 import { withTranslation } from "react-i18next";
 import { WithTranslation } from "next-i18next";
 
+import { FaCodepen, FaGithubAlt, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FiCodesandbox } from "react-icons/fi";
+
+import styles from "./index.module.css";
+
 const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 	<>
 		<Head>
@@ -19,23 +24,26 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 		<p>
 			Architect <a href="https://global.rakuten.com/corp/about/">@Rakuten</a>
 		</p>
-		<div>
+		<div className={styles.socialLinks}>
 			<a href="https://github.com/MiguelAraCo">
-				<img alt="GitHub profile" src="https://via.placeholder.com/40" />
+				<FaGithubAlt />
 			</a>
 			<a href="https://www.linkedin.com/in/miguelaraco">
-				<img alt="LinkedIn profile" src="https://via.placeholder.com/40" />
+				<FaLinkedinIn />
 			</a>
 			<a href="https://twitter.com/miguelaraco">
-				<img alt="Twitter profile" src="https://via.placeholder.com/40" />
+				<FaTwitter />
 			</a>
-			<a href="https://codepen.io/MiguelAraCo/">
-				<img alt="Codepen profile" src="https://via.placeholder.com/40" />
+			<a href="https://codesandbox.io/u/MiguelAraCo">
+				<FiCodesandbox />
+			</a>
+			<a href="https://codepen.io/MiguelAraCo">
+				<FaCodepen />
 			</a>
 		</div>
 		<div>
 			<p>Welcome to my personal website!</p>
-			<p>As you can see, I'm currently in the process of updating it, come back later!</p>
+			<p>As you can see, I'm currently in the process of updating it. Come back later!</p>
 		</div>
 	</>
 );

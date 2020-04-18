@@ -1,0 +1,19 @@
+body {
+	background: #1b1c22;
+
+	color: #fff;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+	color: #9580ff;
+}
+a:visited {
+	color: #9580ff;
+}
+a:hover {
+	color: #9580ff;
+}
