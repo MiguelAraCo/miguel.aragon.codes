@@ -1,3 +1,7 @@
+.header {
+	display: flex;
+}
+
 .socialLinks {
 	display: inline-grid;
 	/* Append items as new columns to the grid */
