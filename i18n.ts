@@ -1,6 +1,6 @@
 import NextI18Next from "next-i18next";
 
-export const i18n = new NextI18Next({
+export const nextI18NextInstance = new NextI18Next({
 	localePath: "public/static/locales",
 	defaultLanguage: "en",
 	otherLanguages: ["es", "jp"],
@@ -11,4 +11,4 @@ export const i18n = new NextI18Next({
 	},
 });
 
-export const { appWithTranslation, withTranslation } = i18n;
+export const { appWithTranslation, withTranslation, i18n } = nextI18NextInstance;

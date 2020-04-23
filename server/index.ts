@@ -2,7 +2,7 @@ import next from "next";
 import express from "express";
 import nextI18NextMiddleware from "next-i18next/middleware";
 import { setupSitemap } from "./sitemap";
-import { i18n } from "../i18n";
+import { nextI18NextInstance } from "../i18n";
 
 const dev = process.env.NODE_ENV !== "production";
 
@@ -19,7 +19,7 @@ export const ROOT_URL: string = dev ? `http://localhost:${port}` : "https://migu
 
 	setupSitemap({ server });
 
-	server.use(nextI18NextMiddleware(i18n));
+	server.use(nextI18NextMiddleware(nextI18NextInstance));
 
 	server.get("*", (req, res) => handle(req, res));
 
