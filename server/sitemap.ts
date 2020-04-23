@@ -14,11 +14,11 @@ export namespace setupSitemap {
 }
 
 export const setupSitemap = ({ server }: setupSitemap.Options) => {
-	// sitemap.add({
-	// 	url: "/",
-	// 	changefreq: EnumChangefreq.DAILY,
-	// 	priority: 1,
-	// });
+	sitemap.add({
+		url: `${ROOT_URL}/`,
+		changefreq: EnumChangefreq.ALWAYS,
+		priority: 1,
+	});
 
 	server.get("/sitemap.xml", (request, response) => {
 		const serializedSitemap = sitemap.toXML(true);
