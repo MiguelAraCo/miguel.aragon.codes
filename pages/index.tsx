@@ -26,7 +26,7 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 						<h1 className="text-3xl md:text-4xl">Miguel Aragon</h1>
 						<p className="mb-4 text-lg md:text-xl">｢アラゴン・ミゲル｣</p>
 						<p>
-							Architect <a href="https://global.rakuten.com/corp/about/">@Rakuten</a>
+							Engineer <a href="https://about.mercari.com/about/company/">@Mercari</a>
 						</p>
 					</div>
 				</header>
@@ -39,11 +39,6 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 					<SocialLink href="https://codepen.io/MiguelAraCo" Icon={FaCodepen} />
 				</div>
 				<div className="mb-8 border-t-2 w-24 md:w-48 mx-auto md:mx-0" />
-				<div className="pl-4 pr-4 md:p-0 md:pl-0 md:pr-0 text-center md:text-left">
-					<p>Welcome to my personal website!</p>
-					<br />
-					<p>As you can see, I'm currently in the process of updating it. Come back later!</p>
-				</div>
 			</div>
 		</Layout>
 	</>
