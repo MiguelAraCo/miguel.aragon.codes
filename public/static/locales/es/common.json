@@ -1,3 +1,5 @@
 {
-  "example": "Ejemplo"
+	"head": {
+		"title": "{{pageTitle}} | Página de Miguel Aragon"
+	}
 }

@@ -23,8 +23,7 @@ export const ROOT_URL: string = dev ? `http://localhost:${port}` : "https://migu
 
 	server.get("*", (req, res) => handle(req, res));
 
-	server.listen(port, err => {
-		if (err) throw err;
+	server.listen(port, () => {
 		console.log(`> Ready on ${ROOT_URL}`);
 	});
 

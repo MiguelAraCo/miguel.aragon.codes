@@ -16,32 +16,35 @@ const Home: NextPage<WithTranslation> = ({ t, i18n }) => (
 		<Layout>
 			<div className="container mx-auto">
 				<Head>
-					<title>Home | Miguel Aragon's site</title>
+					<title>{t("common:head.title", { pageTitle: t("home:head-title") })}</title>
 				</Head>
-				<header className="mb-8 md:mb-0 md:flex md:flex-row-reverse md:justify-end md:items-center">
+				<header className="mb-8 md:mb-0 md:flex md:flex-row-reverse md:justify-center md:items-center">
 					<div className="mb-4 flex flex-row justify-center">
-						<img className="w-40 md:w-56 h-40 md:h-56" alt="Miguel Aragon" src="/images/profile.png" />
+						<img className="w-40 md:w-56 h-40 md:h-56" alt="Profile picture" src="/images/profile.png" />
 					</div>
 					<div className="text-center md:text-left md:mr-16">
-						<h1 className="text-3xl md:text-4xl">Miguel Aragon</h1>
-						<p className="mb-4 text-lg md:text-xl">｢アラゴン・ミゲル｣</p>
-						<p>
-							Engineer <a href="https://about.mercari.com/about/company/">@Mercari</a>
+						<h1 className="text-3xl md:text-4xl">{t("home:names.main")}</h1>
+						<p className="mb-4 text-lg md:text-xl">{t("home:names.secondary")}</p>
+						<p className="mb-4">
+							{t("home:introduction.title")}{" "}
+							<a href={t("home:introduction.company.url")}>@{t("home:introduction.company.name")}</a>
 						</p>
+						<div>
+							<div className="mb-4 border-t-2 w-24 md:w-48 mx-auto md:mx-0" />
+							<div className="mb-4 flex flex-row justify-center md:justify-start">
+								<SocialLink href="https://github.com/MiguelAraCo" Icon={FaGithubAlt} />
+								<SocialLink href="https://www.linkedin.com/in/miguelaraco" Icon={FaLinkedinIn} />
+								<SocialLink href="https://twitter.com/miguelaraco" Icon={FaTwitter} />
+								<SocialLink href="https://codesandbox.io/u/MiguelAraCo" Icon={FiCodesandbox} />
+								<SocialLink href="https://codepen.io/MiguelAraCo" Icon={FaCodepen} />
+							</div>
+							<div className="mb-8 border-t-2 w-24 md:w-48 mx-auto md:mx-0" />
+						</div>
 					</div>
 				</header>
-				<div className="mb-4 border-t-2 w-24 md:w-48 mx-auto md:mx-0" />
-				<div className="mb-4 flex flex-row justify-center md:justify-start">
-					<SocialLink href="https://github.com/MiguelAraCo" Icon={FaGithubAlt} />
-					<SocialLink href="https://www.linkedin.com/in/miguelaraco" Icon={FaLinkedinIn} />
-					<SocialLink href="https://twitter.com/miguelaraco" Icon={FaTwitter} />
-					<SocialLink href="https://codesandbox.io/u/MiguelAraCo" Icon={FiCodesandbox} />
-					<SocialLink href="https://codepen.io/MiguelAraCo" Icon={FaCodepen} />
-				</div>
-				<div className="mb-8 border-t-2 w-24 md:w-48 mx-auto md:mx-0" />
 			</div>
 		</Layout>
 	</>
 );
 
-export default withTranslation("common")(Home);
+export default withTranslation(["common", "home"])(Home);
