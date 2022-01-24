@@ -6,8 +6,8 @@
 	"scripts": {
 		"dev": "nodemon",
 		"build": "next build && tsc --project tsconfig.server.json",
-		"start:prod": "cross-env NODE_ENV=production node dist/server/index.js",
-		"start": "next dev"
+		"start": "cross-env NODE_ENV=production node dist/server/index.js",
+		"start:dev": "next dev"
 	},
 	"repository": {
 		"type": "git",
